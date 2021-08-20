@@ -27,8 +27,6 @@ class Carro:
         text = f"integracion de {kwargs}"
         return text
 
-    
-
 # Clase hija
 class CarroElectrico(Carro):
     def __init__(self, marca, puestos, año, autonomia):
