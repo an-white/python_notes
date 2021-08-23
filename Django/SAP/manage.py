@@ -20,3 +20,15 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+# para iniciar el proyecto en django se utliza la siguiente linea
+# django-admin startproject "Nombre del proyecto"
+
+# para levantar el proyecto ejecutar la linea
+# python manage.py runserver
+
+# esto permite levantar el servicio
+
+# para crear una nueva app se ejecuta la siguiente linea
+# django-admin startapp webapp
+# para añadir vistas ase debe trabajar dentro del archivo views de la app creada

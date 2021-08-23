@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from webapp.views import bienvenido
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-]
+    # definir el mapeo de urls aqui se añaden las urls que se desean trabajar
+    # se definen como funciones
+    path('', bienvenido)
+    
+]   

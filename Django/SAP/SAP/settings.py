@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # dentro de esta lista se debe añadir o enlistar las aplicaciones creadas
     "webapp",
 ]
 
