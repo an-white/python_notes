@@ -32,3 +32,5 @@ if __name__ == '__main__':
 # para crear una nueva app se ejecuta la siguiente linea
 # django-admin startapp webapp
 # para añadir vistas ase debe trabajar dentro del archivo views de la app creada
+
+# creacion de clase de modelo persona

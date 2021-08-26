@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # dentro de esta lista se debe añadir o enlistar las aplicaciones creadas
     "webapp",
+    "personas",
 ]
 
 MIDDLEWARE = [
@@ -56,6 +57,7 @@ ROOT_URLCONF = 'SAP.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        # aqui se definen las carpetas en las cuales estaran alojados los templates, por defecto sera en la carpeta templates
         'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {

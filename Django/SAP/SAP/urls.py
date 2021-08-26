@@ -15,12 +15,24 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from webapp.views import bienvenido
+# importar include para añadir urls de las aplicaciones al proyecto principal
+from django.urls import include
+
+# importar los metodos para poder acceder a las views
+from webapp.views import bienvenido, dinamico, test, consulta
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     # definir el mapeo de urls aqui se añaden las urls que se desean trabajar
     # se definen como funciones
-    path('', bienvenido)
+    path('bienvenido', bienvenido),
+    path("test",test),
+    path("",dinamico),
+
+    # integrar informacion que se va a objetener de nuestra clase de modelo
+    path("consulta",consulta),
+
+    # agregar lista urls de una app
+    path("personas/",include("personas.urls"))
     
 ]   
