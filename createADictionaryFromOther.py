@@ -48,4 +48,4 @@ for i in range(len(container["records"])):
         temp[column]=container["records"][i][column]
     result_list.append(temp)
 
-print("stop")
+print(result_list)

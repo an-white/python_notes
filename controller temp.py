@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-from enum import auto
-from odoo import http
-import logging
-_logger = logging.getLogger(__name__)
-
 # filter search class
 class Filter:
     def filter_tree(self,kwargs):
@@ -120,13 +115,14 @@ class Filter:
         return container
 
 # inherit from my filter class to add some search conditions
-class ClientSearch(http.Controller,Filter):
-    @http.route("/client_search", type="json", auth="user", website=True)
+
+class ClientSearch(Filter): # http.Controller
+    # @http.route("/client_search", type="json", auth="user", website=True)
     def index(self):
         return {"info":"info"}
     
     # renamed route /client_search_by to /client_search_tree 
-    @http.route("/client_search_tree", type="json", auth="user", website=True)
+    # @http.route("/client_search_tree", type="json", auth="user", website=True)
     def search_tree(self,**kwargs):
         # translate pagination option to amount of items per page
 
@@ -162,7 +158,7 @@ class ClientSearch(http.Controller,Filter):
         else:
             return False  
 
-    @http.route("/client_search_kanban" , type="json", auth="user", website=True)
+    # @http.route("/client_search_kanban" , type="json", auth="user", website=True)
     def search_kanban(self,**kwargs):
         # translate pagination option to amount of items per page
         if kwargs["pagination"] == "0":
@@ -209,10 +205,10 @@ class ClientSearch(http.Controller,Filter):
         else:
             return False
 
-    @http.route("/get_client_profile_url", type="json", auth="user", website=True)
+    # @http.route("/get_client_profile_url", type="json", auth="user", website=True)
     def make_url_client_profile(self,**kwargs):
-        ir_action = http.request.env["ir.actions.actions"]
-        action = ir_action.search([("name","=","Perfil del Cliente")])
+        # ir_action = http.request.env["ir.actions.actions"]
+        # action = ir_action.search([("name","=","Perfil del Cliente")])
 
-        url = f"""http://localhost:9000/web#action={action.id}&user_id={kwargs['id']}"""
+        url = f"""0/web#action=action.id&user_id={kwargs['id']}"""
         return {"url":url}
