@@ -1,0 +1,19 @@
+El debuger del IDLE, permite ver cada una de las variables
+y los valores que estas estan tomando a lo largo de la ejecucion del programa
+
+Para ejecutar el debuger se debe abrir primero el IDLE y desde ahi abrir el .py que se
+desea analizar 
+
+Con el boton Go correra el programa hasta conseguirse con un breakpoint o finalice el programa
+
+para ejecutar linea a linea se utiliza el step
+
+Para ejecutar una linea y su funcion interna se utiliza el over el cual dara como resultado
+la funcion 
+
+Para salir de una funcion def que se este verificando se utiliza el out
+
+Para salir del debuger se utiliza el boton quit el cual cierra automaticamente el debuger
+
+Los breakpoints pueden establecerse en lineas especificas del programa los cuales detienen
+la ejecucion del programa 

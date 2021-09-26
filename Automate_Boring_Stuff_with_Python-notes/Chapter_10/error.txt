@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "c:/Users/Personal/Desktop/Python/Chapter_10/Raise_Exceptions_2.py", line 7, in <module>
+    raise Exception('Error :c')
+Exception: Error :c
