@@ -1,0 +1,96 @@
+Archaeologist
+Architect
+Astronaut
+Baker
+Biologist
+Bricklayer
+Bus driver
+Businessman
+Businesswoman
+Butcher
+Caretaker
+Carpenter
+Cashier
+Cleaner
+Clown
+Cobbler
+Consultant
+Cook
+Counselor
+Chef
+Chemist
+Dancer
+Decorator
+Dentist
+Designer
+Doctor
+Dressmaker
+Dustman
+Economist
+Electrician
+Engineer
+Farmer
+Fireman
+FIsherman
+Florist
+Fruiterer
+Garbage collector
+Gardener
+Hairdresser
+Housewife
+Hunter
+Jeweller
+Journalist
+Judge
+Lawyer
+Librarian
+Life guard
+Lorry driver
+Mailman
+Mechanic
+Meteorologist
+Miner
+Model
+Monk
+Nanny
+Nun
+Nurse
+Nursemaid
+Office worker
+Painter
+Pastry cook
+Pharmacist
+Photographer
+Physicist
+Plumber
+Policeman / Policewoman
+Politician
+Porter
+Postman
+Priest
+Professor
+Programmer
+Psychiatrist
+Psychologist
+Receptionist
+Researcher
+Sailor
+Salesman
+Scientist
+Secretary
+Shoemaker
+Shop assistant
+Singer
+Social worker
+Sportsman
+Surgeon
+Taxi driver
+Teacher
+Telephone operator
+Travel agent
+Truck driver
+Vet
+Veterinarian
+Waiter
+Waitress
+Window cleaner
