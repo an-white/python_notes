@@ -1,5 +1,6 @@
 import re
-data=r"""
+
+data = r"""
 Archaeologist: Arqueólogo.
 Architect: Arquitecto.
 Astronaut: Astronauta.
@@ -97,6 +98,8 @@ Waiter: Camarero/a (bar).
 Waitress: Camarera, mesera.
 Window cleaner: Limpiacristales.
 """
-filter=re.compile(r"\n(.+):")
-pro= filter.findall(data)
-professions='\n'.join(pro)
+filter = re.compile(r"\n(.+):")
+pro = filter.findall(data)
+professions = "\n".join(pro)
+
+data = {"a": 1, "b": 2, "c": 3}
