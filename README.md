@@ -7,3 +7,6 @@ activate
 
 **to desactivate**
 deactivate
+
+**generate requirements.txt**
+pip freeze > requirements.txt
