@@ -26,13 +26,13 @@ urlpatterns = [
     # definir el mapeo de urls aqui se añaden las urls que se desean trabajar
     # se definen como funciones
     path('bienvenido', bienvenido),
-    path("test",test),
-    path("",dinamico),
+    path("test", test),
+    path("", dinamico),
 
     # integrar informacion que se va a objetener de nuestra clase de modelo
-    path("consulta",consulta),
+    path("consulta", consulta),
 
     # agregar lista urls de una app
-    path("personas/",include("personas.urls"))
-    
-]   
+    path("personas/", include("personas.urls"))
+
+]
