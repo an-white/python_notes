@@ -8,7 +8,7 @@ antes de la ejecucion del codigo
 # este programa verificara la estructura que debe tener un numero tlf
 
 # Modulo de verificacion de numeros
-def NumeroTLF(txt):
+def numero_tlf(txt):
     global Nro
     if len(Nro) != 12:
         return False
@@ -29,20 +29,23 @@ def NumeroTLF(txt):
 
 
 # Modulo de busqueda
-def Find(txt):
+def find(txt):
     global TLFs
     for c in range(len(Nro)):
-        search = Nro[
-                 c:c + 12]  # esto define que el buscador armara cadenas desde i hasta i+12 y si estas cumplen con la estructuras seran validas
-        if NumeroTLF(search):
-            print('Se ha encontrado el(los) numero(s) telefonico(s):' +)
+        search = Nro[c:c + 12]
+        """
+        esto define que el buscador armara cadenas desde i hasta i+12
+        y si estas cumplen con la estructuras seran validas
+        """
+        if numero_tlf(search):
+            print('Se ha encontrado el(los) numero(s) telefonico(s):' + search)
 
 
 while True:
     print('\nIntroduzca su numero telefonico, este debe poseer la estructura, ###-###-####')
     Nro = input()
-    Find(Nro)
-    if NumeroTLF(Nro) == True:
+    find(Nro)
+    if numero_tlf(Nro):
         print('El numero ' + str(Nro) + ', es valido.')
         break
     else:

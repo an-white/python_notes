@@ -5,8 +5,10 @@ pero no permite trabajar con .rar
 """
 import zipfile
 
-# crear archivos zip
-# es parecido al generar cualquiero otro archivo con os y abrirlo en modo write
+"""
+crear archivos zip
+es parecido al generar cualquiero otro archivo con os y abrirlo en modo write
+"""
 new_zip = zipfile.ZipFile('prueba.zip', 'w')  # permite precargar la opcion de escribir
 
 # añadir elementos al .zip con el modulo write de os
