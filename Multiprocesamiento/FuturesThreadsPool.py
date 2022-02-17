@@ -1,8 +1,7 @@
-import time
 import logging
-import requests
-import threading
 from concurrent.futures import ThreadPoolExecutor
+
+import requests
 
 logging.basicConfig(level=logging.DEBUG, format='%(threadName)s: %(message)s', )
 
@@ -55,5 +54,3 @@ if __name__ == '__main__':
 #         for url in URLS:
 #             futuro = executor.submit(generate_request, url)
 #             futuro.add_done_callback(check_status_code)
-
-

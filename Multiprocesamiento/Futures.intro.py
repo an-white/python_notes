@@ -1,13 +1,14 @@
-import time
 import logging
-
+import time
 from concurrent.futures import Future
 
 logging.basicConfig(level=logging.DEBUG, format='%(message)s')
 
+
 def callback(future):
     logging.info('Hola, soy un callback que se ejecuta hasta que el Futuro posea un valor!')
     logging.info(f'El valor del futuro es: {future.result()}')
+
 
 if __name__ == '__main__':
     future = Future()
