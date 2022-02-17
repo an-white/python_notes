@@ -1,6 +1,7 @@
 import logging
+import random
+import time
 from concurrent.futures import ThreadPoolExecutor as TPE
-import time, random
 
 logging.basicConfig(level=logging.DEBUG, format='%(threadName)s: %(message)s')
 

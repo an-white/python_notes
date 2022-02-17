@@ -1,5 +1,5 @@
-from personas.views import nombre, apellido, telefono
 from django.urls import path
+from personas.views import nombre, apellido, telefono
 
 # importar include para añadir urls de las aplicaciones al proyecto principal
 

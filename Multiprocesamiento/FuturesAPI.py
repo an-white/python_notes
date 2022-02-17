@@ -1,9 +1,9 @@
 import logging
 import random
-
-import requests
 import threading
 from concurrent.futures import Future
+
+import requests
 
 logging.basicConfig(level=logging.DEBUG, format='%(message)s')
 
