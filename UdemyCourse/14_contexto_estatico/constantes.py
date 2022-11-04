@@ -3,6 +3,7 @@
 
 CONSTANTE_1 = "PI 3.14"
 
+
 # tambien se pueden definir variables de clase
 class Maths:
     EULER = 2.71

@@ -3,11 +3,12 @@
 # ordenado, y mostrando cada key en una linea diferente
 
 import pprint
-sms='Que bueno que ya lo instalaste en todas partes'
-count={}
+
+sms = 'Que bueno que ya lo instalaste en todas partes'
+count = {}
 for c in sms:
-    count.setdefault(c,0)
-    count[c]= count[c]+1
+    count.setdefault(c, 0)
+    count[c] = count[c] + 1
 pprint.pprint(count)
 
 # Esta estructura permite contar cada caracter y a su vez mostrarlo

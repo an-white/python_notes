@@ -1,7 +1,8 @@
 # re permite analizar cadenas de texto de forma mas corta
 import re
 import sys
-Check_Regex=re.compile(r'\d{3}-\d{3}-\d{4}') 
+
+Check_Regex = re.compile(r'\d{3}-\d{3}-\d{4}')
 # Esta vaiable contiene al objeto Regex que queremos buscar
 # el escribir r'y el resto de slash invertidos es la mejor forma 
 # de hacerlo
@@ -14,14 +15,14 @@ Check_Regex=re.compile(r'\d{3}-\d{3}-\d{4}')
 # condiciones establecidas
 while True:
     print('\nIntroduzca un texto para verificar si este contiene un numero de TLF con al estructura ###-###-####')
-    TLF=Check_Regex.search(input())
-    if TLF==None:
-        print ('No se han econtrado numeros en el texto introducido')
+    TLF = Check_Regex.search(input())
+    if TLF == None:
+        print('No se han econtrado numeros en el texto introducido')
     else:
-        print('Numero de Tlf encontrado:'+TLF.group())
-        sys.exit()    
+        print('Numero de Tlf encontrado:' + TLF.group())
+        sys.exit()
 
-# Metodos del Regex
+    # Metodos del Regex
 # re.DOTALL ignora saltos de lineas
 # re.I identifica directamente la cadena buscada no distigue mayusculas
 # o de minusculas

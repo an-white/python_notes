@@ -22,17 +22,17 @@
 
 import re
 
-txt='RoboCop is part man, part machine, all cop.'
-Regex=re.compile(r'robocop', re.I)
-Diag=Regex.search(txt)
+txt = 'RoboCop is part man, part machine, all cop.'
+Regex = re.compile(r'robocop', re.I)
+Diag = Regex.search(txt)
 print(Diag.group())
 
 # sustitucion de caracteres en un str con el Metodo .sub
 # permite sustituir valores de una cadena de entrada con algo que 
 # se desee sustituir 
-txt='Agent Alice gave the secret documents to Agent Bob'
-Regex_C=re.compile(r'Agent \w+')
-NC= Regex_C.sub('CENSURADO',txt)
+txt = 'Agent Alice gave the secret documents to Agent Bob'
+Regex_C = re.compile(r'Agent \w+')
+NC = Regex_C.sub('CENSURADO', txt)
 print(NC)
 
 # para reemplazar se debe definir
@@ -44,10 +44,12 @@ print(NC)
 
 
 # Tambien se puede sustituir parcialmente una cadena si se define 
-txt='''Agent Alice told Agent Carol that Agent Eve
+txt = '''Agent Alice told Agent Carol that Agent Eve
 knew Agent Bob was a double agent'''
-Regex_PC=re.compile(r'Agent (\w)\w*') #esta definicion establece la palabra clave, lo que se desea conservar y lo que se piensa sustituir
-NC=Regex_PC.sub(r'\1***', txt) # en r'\[n valores que se desean mostrar]acompañado de lo que se desea colocar como relleno'
+Regex_PC = re.compile(
+    r'Agent (\w)\w*')  # esta definicion establece la palabra clave, lo que se desea conservar y lo que se piensa sustituir
+NC = Regex_PC.sub(r'\1***',
+                  txt)  # en r'\[n valores que se desean mostrar]acompañado de lo que se desea colocar como relleno'
 print(NC)
 
 # estructura compleja para identificar numeros telefonicos, 
@@ -58,14 +60,14 @@ print(NC)
 # lo cual permite escribir en varias lineas las definiciones de 
 # lo que se desea buscar haciendo mas facil su posterior lectura
 
-IDTLF= re.compile(r'''(
+IDTLF = re.compile(r'''(
 (\d{3}|\(\d{3}\))?                  # Codigo de area Opcional puede estar entre ()
 (\s|-|\.)?                          # Tipo de separador
 \d{3}                               # primeros 3 digitos
 (\s|-|\.)                           # Tipo de separador
 \d{4}                               # Ulitimos 4 digitos
-)''', re.VERBOSE)              
+)''', re.VERBOSE)
 
-txt= 'contactos al 412.405.6128 y 416 648 1139 o 241.858 6237'
-Matched=IDTLF.findall(txt)
+txt = 'contactos al 412.405.6128 y 416 648 1139 o 241.858 6237'
+Matched = IDTLF.findall(txt)
 print(Matched)

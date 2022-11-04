@@ -1,5 +1,5 @@
 # para eliminar un elemento por su indice se puede utilizar la funcion pop
-l=list(range(4))
+l = list(range(4))
 print(l)
 # por defecto se elimina el ultimo valor
 l.pop()

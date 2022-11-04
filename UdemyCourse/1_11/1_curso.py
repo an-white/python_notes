@@ -6,7 +6,7 @@ x: int = 2
 print(x)
 
 # otra forma de concatenar strings
-test="test ""1 ""de ""2"
+test = "test ""1 ""de ""2"
 
 print(test)
 
@@ -17,18 +17,17 @@ print(f"immmprimmiemmmdo {test}")
 
 # residuo de la division con el operador modulo %
 
-res=3%2
+res = 3 % 2
 print(f"residuo de la division {res}")
 
 a = True
 # not retorna el inverso de la condicion de entrada el operador not es un operador unario es decir solo necesita 1 valor para operar
 result = not a
-print(result) 
-
+print(result)
 
 # el condicional if se puede def
-a=None
-if a: # esto solo verifiacara si la var es != de None del resto si imprime
+a = None
+if a:  # esto solo verifiacara si la var es != de None del resto si imprime
     print(a)
 else:
     print(a)
@@ -44,4 +43,3 @@ for n in range(3):
     print(n, end=", ")
 else:
     print(f"fin del ciclo con n={n}\n")
-

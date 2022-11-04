@@ -1,6 +1,7 @@
 import asyncio
+import random
+import time
 from concurrent.futures import ThreadPoolExecutor as TPE
-import time, random
 
 
 def super_task(a):

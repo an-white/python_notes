@@ -5,7 +5,7 @@
 print('45 ', end='')
 print('Segundos')
 
-#si se quiere hacer un print en forma de lista se def
+# si se quiere hacer un print en forma de lista se def
 # un sep='separador que se desee utilizar'
 
-print('12','34','23', sep=' ; ')
+print('12', '34', '23', sep=' ; ')

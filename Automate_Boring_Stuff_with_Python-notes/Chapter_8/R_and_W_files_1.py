@@ -1,9 +1,11 @@
-import os, pyperclip
+import os
+import pyperclip
+
 # esto nos permite generalizar la entrada de directorios
 # Ya que dependiendo del SO la forma en que estos se organizan
 # varia segun el sistema utilizado, para lo que podemos utilizar el
 
-dir=os.path.join('C','Usuarios','Black PC','Documentos','Universidad')
+dir = os.path.join('C', 'Usuarios', 'Black PC', 'Documentos', 'Universidad')
 print(str(dir))
 pyperclip.copy(dir)
 
@@ -13,9 +15,9 @@ pyperclip.copy(dir)
 # con este modulo se puede dar ubicacion a un archivo nuevo que se
 # desee introducir en cierto directorio
 
-Archivos=['cuentas.txt','Brochure.ai','Photo.psd']
+Archivos = ['cuentas.txt', 'Brochure.ai', 'Photo.psd']
 for n_archivo in Archivos:
-    print(os.path.join('C','Usuarios','Black PC','Documentos',n_archivo))
+    print(os.path.join('C', 'Usuarios', 'Black PC', 'Documentos', n_archivo))
 
 # el .getcwd() nos arrojara como resultado al direccion actual del archivo
 # que estamos trabajando
@@ -24,7 +26,7 @@ print(os.getcwd())
 # con el Modulo .chdir() podremos cambiar la actual direccion a la que 
 # deseemos reubicar el programa actual
 
-os.chdir('C:\\Users\\andre')# si el path para reubicar no existe dara un error como resultado
+os.chdir('C:\\Users\\andre')  # si el path para reubicar no existe dara un error como resultado
 
 # con .\ se puede dar la ubicacion parcial de un archivo que pertenezca
 # a la carpeta que actualmente estamos trabajando

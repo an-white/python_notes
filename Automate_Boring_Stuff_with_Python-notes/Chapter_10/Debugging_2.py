@@ -6,7 +6,7 @@ import traceback
 try:
     raise Exception('Error :c')
 except:
-    error_txt=open('.\error.txt','w')
+    error_txt = open('.\error.txt', 'w')
     error_txt.write(traceback.format_exc())
     error_txt.close()
     print('\nel informe de error fue generado correctamente en el archivo error.txt\n')
@@ -20,10 +20,10 @@ print('error saltado')
 # y una cadena en la cual se debe o no cumplir esta condicion
 
 puerta = 'abierta'
-assert puerta=='abierta', 'la puerta esta "abierta"'
+assert puerta == 'abierta', 'la puerta esta "abierta"'
 
-txt='hola'
-assert txt=='perro', 'hola como "estas"'
+txt = 'hola'
+assert txt == 'perro', 'hola como "estas"'
 
 # En el primer ejemplo la def se cumple y el programa se continua ejecutando
 # mientras que en el 2do la condicion evaluada no se cumple y el programa genera el

@@ -1,14 +1,15 @@
-#para errores logicos en el programa se utiliza el exept 
+# para errores logicos en el programa se utiliza el exept
 # el cual viene acompañado por la condicion de error
 # que se desea evitar
 
 def spam(division):
     try:
-        return 42/ division
+        return 42 / division
     except ZeroDivisionError:
-           print ('Error: no se puede dividir entre 0')
+        print('Error: no se puede dividir entre 0')
 
-#si el codigo try causa un error este automaticamente pasara a
+
+# si el codigo try causa un error este automaticamente pasara a
 # la condicion except esta dara el mensaje de error sin provocar
 # que el programa se detenga en su ejecucion y marcando
 # un error en ese lugar
@@ -24,13 +25,15 @@ print(spam(42))
 
 print('rotura de try')
 
+
 def spam(division):
-    return 42/ division
+    return 42 / division
+
+
 try:
     print(spam(2))
     print(spam(0))
     print(spam(12))
     print(spam(42))
 except ZeroDivisionError:
-      print ('Error: no se puede dividir entre 0')
-
+    print('Error: no se puede dividir entre 0')

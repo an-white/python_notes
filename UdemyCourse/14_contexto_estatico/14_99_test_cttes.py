@@ -4,4 +4,3 @@ from constantes import *
 print(CONSTANTE_1)
 
 print(Maths.EULER)
-

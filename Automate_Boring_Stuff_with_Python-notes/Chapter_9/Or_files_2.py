@@ -1,4 +1,4 @@
-import send2trash, os, shutil
+import os
 
 # el modulo walk permite ver el path de los elementos que pertenezcan a
 # una carpeta indicada entre ()
@@ -6,13 +6,13 @@ import send2trash, os, shutil
 # que esten contenidas en det path
 
 for Car_N, SubCarps, files_N in os.walk(os.getcwd()):
-    print ('Carpeta actual es '+ Car_N)
+    print('Carpeta actual es ' + Car_N)
 
     for SubCar in SubCarps:
-        print('\nSub Carpeta de '+ Car_N +': '+ SubCar)
+        print('\nSub Carpeta de ' + Car_N + ': ' + SubCar)
 
         for files in files_N:
-            print ('Archivos de la carpeta:' + SubCar+': '+files)            
+            print('Archivos de la carpeta:' + SubCar + ': ' + files)
 
-# este metodo devuelve como resultado una list de los nombres de las 
+        # este metodo devuelve como resultado una list de los nombres de las
 # carpetas y archivos contenidos en cierto directorio
