@@ -13,14 +13,14 @@ json_15 = {
 }
 json_16 = {}
 
-for line in list_orden_15:
+for line in list_orden_16:
     num_orden, id_customer = line.split(' ')
     record = {
         "body": """{
   \"Message\" : \"{\\\"CASA\\\":0,\\\"schema\\\":\\\"dbafv\\\",\\\"data\\\":{\\\"NUMORDEN\\\":\\\"""" +
                 num_orden +
                 """\\\",\\\"IDCLIENTE\\\":\\\"""" +
-                id_customer[0:-1] + """\\\"}}\""""
+                id_customer[0:-1] + """\\\"}}\"}"""
     }
     json_15["Records"].append(record)
 

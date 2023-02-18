@@ -1,5 +1,5 @@
 """
-esta libreria permite ver cual es el error en el programa generando un
+Esta libreria permite ver cuál es el error en el programa generando un
 informe en un txt el cual permite tener el error que detenga el programa
 y permite seguir con la ejecucion del programa
 """
