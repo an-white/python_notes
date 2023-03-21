@@ -1,29 +1,41 @@
 import json
+import time
 
-pedidos_1 = open('pedidos20230215.md', 'r')
-pedidos_2 = open('pedidos20230216.md', 'r')
 
-list_orden_15 = pedidos_1.readlines()
-list_orden_16 = pedidos_2.readlines()
+def build_json():
+    # orders file must have the next structure
+    """ orders.md
+    NUMORDEN1 IDCLIENTE1
+    NUMORDEN2 IDCLIENTE2
+    """
+    # this structure is the easy way to build all the orden JSONs
 
-json_15 = {
-    "Records": [
+    orders_file = open('orders.md', 'r')
 
-    ]
-}
-json_16 = {}
+    list_orden = orders_file.readlines()
 
-for line in list_orden_16:
-    num_orden, id_customer = line.split(' ')
-    record = {
-        "body": """{
-  \"Message\" : \"{\\\"CASA\\\":0,\\\"schema\\\":\\\"dbafv\\\",\\\"data\\\":{\\\"NUMORDEN\\\":\\\"""" +
-                num_orden +
-                """\\\",\\\"IDCLIENTE\\\":\\\"""" +
-                id_customer[0:-1] + """\\\"}}\"}"""
+    new_json = {
+        "Records": [
+
+        ]
     }
-    json_15["Records"].append(record)
+    json_16 = {}
 
-    new_file = open('sendPedido.json', 'w')
+    for line in list_orden:
+        num_orden, id_customer = line.split(' ')
+        record = {
+            "body": """{
+      \"Message\" : \"{\\\"CASA\\\":0,\\\"schema\\\":\\\"dbafv\\\",\\\"data\\\":{\\\"NUMORDEN\\\":\\\"""" +
+                    num_orden +
+                    """\\\",\\\"IDCLIENTE\\\":\\\"""" +
+                    id_customer[0:-1] + """\\\"}}\"}"""
+        }
+        new_json["Records"].append(record)
 
-    new_file.write(json.dumps(json_15))
+    new_file = open(f'sendPedido{int(time.time())}.json', 'w')
+
+    new_file.write(json.dumps(new_json))
+
+
+if __name__ == '__main__':
+    build_json()
