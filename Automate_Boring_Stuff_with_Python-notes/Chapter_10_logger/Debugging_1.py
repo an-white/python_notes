@@ -1,10 +1,10 @@
 """
-mientras el try and except establecidos permiten al programa contiunar
+Mientras el try and except establecidos permiten al programa continuar
 de un error el cual se puede anticipar que va a suceder
-con el key word raise se pueden def tambien estas exceciones que se
+con el key word raise se pueden def también estas excepciones que se
 preveen para que el programa no falle
 
-keyword raise acompañada de la excecion permite
+keyword raise acompañada de la exception permite
 raise Exception('Este es el mensaje de error')
 """
 
