@@ -16,21 +16,15 @@ def build_json():
 
     list_order = orders_file.readlines()
 
-    new_json = {
-        "Records": [
-
-        ]
-    }
-    json_16 = {}
+    new_json = {"Records": []}
 
     for line in list_order:
-        num_order, id_customer = line.split(' ')
+        num_order, id_customer, order_date = line.split(' ')
         record = {
-            "body": """{
-      \"Message\" : \"{\\\"CASA\\\":0,\\\"schema\\\":\\\"dbafv\\\",\\\"data\\\":{\\\"NUMORDEN\\\":\\\"""" +
-                    num_order +
-                    """\\\",\\\"IDCLIENTE\\\":\\\"""" +
-                    id_customer[0:-1] + """\\\"}}\"}"""
+            "body": """{ \"Message\" : \"{\\\"CASA\\\":0,\\\"schema\\\":\\\"dbafv\\\",\\\"data\\\":{""" +
+                    """\\\"NUMORDEN\\\":\\\"""" + num_order +
+                    """\\\",\\\"IDCLIENTE\\\":\\\"""" + id_customer.strip() +
+                    """\\\",\\\"FECHAEMISION\\\":\\\"""" + order_date.strip() + """\\\"}}\"}"""
         }
         new_json["Records"].append(record)
 
