@@ -6,8 +6,8 @@ def build_json():
     # orders file must have the next structure
 
     """ orders.md
-    NUMORDEN1 IDCLIENTE1
-    NUMORDEN2 IDCLIENTE2
+    NUMORDEN1 IDCLIENTE1 FECHAEMISION1
+    NUMORDEN2 IDCLIENTE2 FECHAEMISION2
     """
 
     # this structure is the easy way to build all the orders in the JSON
